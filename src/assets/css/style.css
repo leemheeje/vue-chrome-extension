@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+/**** reset ****/
+html{-webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,form,fieldset,p,button{margin:0;padding:0}
+body,h1,h2,h3,h4,input,button,select,textarea{font-family: 'Nanum Gothic', sans-serif;font-size:15px;color:#1B1B1B}
+body{text-align:left; word-break:keep-all; overflow-y:scroll; }
+img,fieldset,iframe{border:0 none}
+iframe{max-width: 100%;}
+li{list-style:none}
+input,select,button{vertical-align:top}
+img{vertical-align:top; max-width:100%;}
+i,em,address{font-style:normal}
+label,button{cursor:pointer}
+a{color:#000;text-decoration:none; outline:none;}
+a:hover{text-decoration:none}
+hr{display:none}
+table{border-collapse:collapse;border-spacing:0}
+caption{font-size:0; line-height:0; height:0}
+
+* {box-sizing:border-box;}
+.preloader{transform-origin: center center; animation:  preloader 1.5s infinite; background: #fff; display: inline-block; border-radius: 50%; width: 40px; height: 40px; position: absolute; left: 15px; top: 50%; margin-top: -20px;}
+.preloader i{color: #4285f4; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);}
+
+@keyframes preloader {
+	0%{transform: rotate(0deg)}
+	100%{transform: rotate(360deg)}
+}
+
+
+
+.ore {
+	position: absolute;
+	z-index: 3;
+	width: 60px;
+	height: 60px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	}
+
+	.item {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	position: absolute;
+	}
+
+	.item-1 {
+	background-color: #FA5667;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	animation: item-1_move 1.8s cubic-bezier(.6,.01,.4,1) infinite;
+	}
+
+	.item-2 {
+	background-color: #7A45E5;
+	top: 0;
+	right: 0;
+	animation: item-2_move 1.8s cubic-bezier(.6,.01,.4,1) infinite;
+	}
+
+	.item-3 {
+	background-color: #1B91F7;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+	animation: item-3_move 1.8s cubic-bezier(.6,.01,.4,1) infinite;
+	}
+
+	.item-4 {
+	background-color: #FAC24C;
+	bottom: 0;
+	left: 0;
+	animation: item-4_move 1.8s cubic-bezier(.6,.01,.4,1) infinite;
+}
+
+@keyframes item-1_move {
+0%, 100% {transform: translate(0, 0)} 
+25% {transform: translate(0, 15px)} 
+50% {transform: translate(15px, 15px)} 
+75% {transform: translate(15px, 0)} 
+}
+
+@keyframes item-2_move {
+0%, 100% {transform: translate(0, 0)} 
+25% {transform: translate(-15px, 0)} 
+50% {transform: translate(-15px, 15px)} 
+75% {transform: translate(0, 15px)} 
+}
+
+@keyframes item-3_move {
+0%, 100% {transform: translate(0, 0)} 
+25% {transform: translate(0, -15px)} 
+50% {transform: translate(-15px, -15px)} 
+75% {transform: translate(-15px, 0)} 
+}
+
+@keyframes item-4_move {
+0%, 100% {transform: translate(0, 0)} 
+25% {transform: translate(15px, 0)} 
+50% {transform: translate(15px, -15px)} 
+75% {transform: translate(0, -15px)} 
+}
+
+
+

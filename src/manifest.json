@@ -1,0 +1,33 @@
+{
+  "name": "뭐 먹을까요? - 아무거나.....",
+  "description": "어떠한 점심메뉴를 먹을지 직원들끼리 공유하세요. 그리고 투표로 점심메뉴를 정하세요.",
+  "version": 1,
+  "manifest_version": 2,
+  "icons": {
+    "48": "icons/icon_48.png",
+    "128": "icons/icon_128.png"
+  },
+  "browser_action": {
+    "default_title": "Team Choose a menu",
+    "default_popup": "popup/popup.html"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "chrome_style": true
+  },
+  "permissions": [
+    "identity"
+  ],
+  "oauth2": {
+    "client_id": "97476178188-u1ogduirt1kt34oucaq37omnout3d47a.apps.googleusercontent.com",
+    "scopes": [
+		"https://www.googleapis.com/auth/userinfo.email",
+		"https://www.googleapis.com/auth/userinfo.profile"
+	]
+  }
+}
