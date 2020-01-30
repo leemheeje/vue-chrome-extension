@@ -4,3 +4,4 @@
 /dist-zip
 /*.zip
 /firebaseConfig.js
+/manifest.json
